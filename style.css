@@ -27,10 +27,6 @@ h1 {
     font-weight: 800;
 }
 
-html {
-    /* overflow-x: hidden; */
-}
-
 body {
     width: 100vw;
     height: auto;
@@ -89,6 +85,13 @@ body {
     border-radius: 1.5rem;
     color: var(--darkest);
     font-family: 'Fraunces', serif;
+    transition: all 0.2s ease;
+}
+
+#contact-btn:hover {
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+    color: white;
 }
 
 .hero>h1 {
@@ -154,11 +157,21 @@ p {
     font-family: 'Fraunces', serif;
     background: none;
     border: none;
-    text-decoration: underline hsla(51, 100%, 49%, 0.5) solid 5px;
+    text-decoration: underline hsla(51, 100%, 49%, 0.4) solid 5px;
+    transition: all 0.2s ease;
+}
+
+.learn-more-btn:hover {
+    cursor: pointer;
+    text-decoration-color: hsla(51, 100%, 49%, 1);
 }
 
 .right-btn {
-    text-decoration: underline hsla(7, 99%, 70%, 0.5) solid 5px;
+    text-decoration: underline hsla(7, 99%, 70%, 0.4) solid 5px;
+}
+
+.right-btn:hover {
+    text-decoration-color: hsla(7, 99%, 70%, 1);
 }
 
 .overlay-txt {
@@ -271,7 +284,6 @@ h4 {
 
 .gallery-grid>div>img {
     width: 100%;
-    /* object-fit: cover; */
 }
 
 .footer {
@@ -299,6 +311,11 @@ h4 {
 .footer-links>a {
     text-decoration: none;
     color: var(--footer-color);
+    transition: all 0.2s ease;
+}
+
+.footer-links>a:hover {
+    color: white;
 }
 
 .social-media-icons {
@@ -306,6 +323,15 @@ h4 {
     gap: 1rem;
     color: var(--footer-color);
     margin-top: 2rem;
+}
+
+.fa-brands {
+    transition: all 0.2s ease;
+}
+
+.fa-brands:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .attribution { 
